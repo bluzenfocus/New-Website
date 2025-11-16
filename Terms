@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Bluzen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind = { config: { theme: { extend: { colors: { bluzen: '#64DED4' } } } } };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05070a;
+      color: #e6f0f2;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <header class="sticky top-0 z-40 bg-black/70 backdrop-blur border-b border-white/10">
+    <div class="container flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="assets/logo.svg" alt="Bluzen logo" class="h-8 w-8 rounded-xl border border-bluzen/60 bg-bluzen/10">
+        <span class="font-semibold tracking-wide text-bluzen group-hover:opacity-80">Bluzen</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container py-12 md:py-16 text-sm md:text-base space-y-6">
+    <h1 class="text-2xl md:text-3xl font-bold mb-2">Terms of Service</h1>
+    <p class="text-white/80">
+      Bluzen provides online education, coaching, and hypnotherapy-based services aimed at improving focus, regulation, and wellbeing.
+      It is not a crisis service and does not replace medical or psychiatric care.
+    </p>
+    <p class="text-white/80">
+      By using Bluzen services, you agree to:
+    </p>
+    <ul class="list-disc list-inside text-white/80 space-y-1">
+      <li>Use the content and sessions for your own personal development.</li>
+      <li>Seek appropriate crisis or emergency help if you are in danger or experiencing acute distress.</li>
+    </ul>
+    <p class="text-white/80">
+      Payments reserve your slot and personalised work begins immediately. For this reason, refunds are not offered once sessions begin
+      (see the Program FAQ for more detail on pause and refund policy).
+    </p>
+    <p class="text-white/80">
+      Bluzen may update these terms as the service grows. Continued use of the website and services means you accept the latest version.
+    </p>
+    <p class="text-white/80">
+      For questions about these terms, contact
+      <a href="mailto:info@bluzenfocus.com" class="text-bluzen hover:underline">info@bluzenfocus.com</a>.
+    </p>
+    <p class="text-xs text-white/50">
+      This is an early-stage, plain-language version of Bluzen’s terms and does not replace formal legal advice.
+    </p>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="container py-6 text-xs text-white/60 flex flex-col md:flex-row justify-between gap-2">
+      <span>© <span id="year"></span> Bluzen.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
