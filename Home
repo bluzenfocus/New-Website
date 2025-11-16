@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bluzen — Clearer thinking. Better living.</title>
+  <meta name="description" content="Bluzen is an online mental health service that helps fast minds slow down and focus. Understand how your focus actually works and retrain your mind for clarity, calm, and control." />
+
+  <!-- Google Font: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN -->
+  <script>
+    tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: { bluzen: '#64DED4' }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html, body { height: 100%; }
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05070a;
+      color: #e6f0f2;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .glass {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-black/70 backdrop-blur border-b border-white/10">
+    <div class="container flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="assets/logo.svg" alt="Bluzen logo" class="h-8 w-8 rounded-xl border border-bluzen/60 bg-bluzen/10">
+        <span class="font-semibold tracking-wide text-bluzen group-hover:opacity-80">Bluzen</span>
+      </a>
+
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-white/10" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
+        <a href="program.html" class="hover:text-white">Program</a>
+        <a href="library.html" class="hover:text-white">Library</a>
+        <a href="about.html" class="hover:text-white">About</a>
+        <a href="#book" class="px-3 py-2 rounded-xl border border-bluzen/60 text-bluzen hover:bg-bluzen/10">Book 15-min call</a>
+      </nav>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <div class="container py-3 flex flex-col gap-3 text-sm text-white/90">
+        <a href="program.html" class="py-1">Program</a>
+        <a href="library.html" class="py-1">Library</a>
+        <a href="about.html" class="py-1">About</a>
+        <a href="#book" class="py-2 rounded-lg border border-bluzen/60 text-center text-bluzen">Book 15-min call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-bluzen/15 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-40 w-[26rem] h-[26rem] bg-bluzen/10 rounded-full blur-3xl"></div>
+
+    <div class="container py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center relative">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Clearer thinking.<br />
+          <span class="text-bluzen">Better living.</span>
+        </h1>
+        <p class="mt-5 text-white/80 max-w-xl">
+          Gain focus, consistency, and control. Bluzen helps you retrain your mind to think clearer, sleep better, and perform at your best.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#quiz" class="px-5 py-3 rounded-xl bg-bluzen text-black font-semibold hover:opacity-90 transition">
+            Take the 2-minute quiz
+          </a>
+          <a href="program.html" class="px-5 py-3 rounded-xl border border-white/20 text-white/90 hover:bg-white/10 transition">
+            See the 8-Week Program
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-semibold mb-4">Start here</h2>
+        <div class="grid gap-3 text-sm">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="text-white/60 mb-1">Step 1</div>
+            <div class="font-semibold">Focus Quiz</div>
+            <div class="text-white/60">Quiz embed coming soon.</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+            <div class="text-white/60 mb-1">Step 2</div>
+            <div class="font-semibold">Focus Guide</div>
+            <div class="text-white/60">Email signup and guide delivery coming soon.</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10" id="book">
+            <div class="text-white/60 mb-1">Step 3</div>
+            <div class="font-semibold">15-minute Call</div>
+            <div class="text-white/60">Booking link coming soon.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARN / APPLY / REWIRE -->
+  <section class="container py-10 md:py-16">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-2xl p-6">
+        <div class="text-bluzen font-semibold mb-2">Learn</div>
+        <h3 class="font-semibold text-lg mb-2">Understand your brain systems</h3>
+        <p class="text-white/70">
+          Learn the brain systems behind focus, stress, and emotion — in clear, simple language.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="text-bluzen font-semibold mb-2">Apply</div>
+        <h3 class="font-semibold text-lg mb-2">Train your mind</h3>
+        <p class="text-white/70">
+          Train the mind like you train the body — with structure, feedback, and repetition.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="text-bluzen font-semibold mb-2">Rewire</div>
+        <h3 class="font-semibold text-lg mb-2">Build lasting control</h3>
+        <p class="text-white/70">
+          Build lasting mental control through focused repetition and hypnotherapy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ + GUIDE PLACEHOLDERS -->
+  <section class="container py-10 md:py-16" id="quiz">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Focus Quiz</h2>
+        <p class="text-white/75 mb-4">
+          A quick 2-minute starting point to see how your focus currently runs. Page one of your guide will be tailored to your result.
+        </p>
+        <div class="glass rounded-xl p-6 text-white/60 text-sm flex items-center justify-center h-56">
+          Quiz embed coming soon. You’ll paste your Typeform/Carrd link here later.
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Focus Guide (free)</h2>
+        <p class="text-white/75 mb-4">
+          Delivered by email. The guide walks you through sleep, regulation, and focus — and shows you how they work together.
+        </p>
+        <div class="glass rounded-xl p-6 text-white/60 text-sm flex items-center justify-center h-40">
+          Email signup embed coming soon. You’ll paste your MailerLite code here later.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM TEASER -->
+  <section class="container py-10 md:py-16 border-t border-white/10">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">The 8-Week Focus Program</h2>
+        <p class="text-white/75 mb-4">
+          A structured block designed to retrain focus, consistency, and emotional control.
+          Each week builds measurable mental clarity using hypnotherapy, CBT, and neuroscience-based tools.
+        </p>
+        <ul class="list-disc list-inside text-white/80 space-y-1">
+          <li>Learn how your brain actually processes focus and stress.</li>
+          <li>Apply targeted exercises for calm, sleep, and motivation.</li>
+          <li>Rebuild your mental systems for lasting control.</li>
+        </ul>
+        <a href="program.html" class="inline-block mt-6 px-5 py-3 rounded-xl bg-bluzen text-black font-semibold hover:opacity-90">
+          See full program
+        </a>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <h3 class="font-semibold mb-3">What you get</h3>
+        <ul class="text-sm text-white/80 space-y-2">
+          <li>8 weekly 1:1 Zoom sessions.</li>
+          <li>Personalised hypnosis/NLP recordings tailored to your goals.</li>
+          <li>Tools to track focus, habits, and progress.</li>
+          <li>Lifetime access to the Bluzen digital library (client-only, launching 2026).</li>
+          <li>Between-session check-ins and guided reflection.</li>
+          <li>Lifetime access to all recordings and materials.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIBRARY PREVIEW -->
+  <section class="container py-10 md:py-16 border-t border-white/10">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Library Preview</h2>
+        <p class="text-white/75 mb-4">
+          Client-only access. Explore the tools that power Bluzen’s system.
+          Modules combine neuroscience, hypnotherapy, and cognitive training — designed to help fast minds build clarity, calm, and control.
+        </p>
+        <a href="library.html" class="inline-block mt-2 px-5 py-3 rounded-xl border border-white/20 text-white/90 hover:bg-white/10 text-sm">
+          View Library overview
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4 text-sm">
+        <div class="glass rounded-xl p-4">
+          <div class="font-semibold mb-1">The System Behind Focus</div>
+          <p class="text-white/70">How your brain’s attention and emotion networks work — and how to train them.</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <div class="font-semibold mb-1">Overthinking & The Amygdala Loop</div>
+          <p class="text-white/70">What causes mental overload and how to break the stress–focus cycle.</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <div class="font-semibold mb-1">Sleep & Mental Reset</div>
+          <p class="text-white/70">Practical strategies to restore deep sleep and reset your prefrontal cortex.</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <div class="font-semibold mb-1">Building Consistency</div>
+          <p class="text-white/70">The neuroscience of habits — and how to finally follow through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 mt-8">
+    <div class="container py-10 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <img src="assets/logo.svg" alt="Bluzen logo" class="h-8 w-8 rounded-xl border border-bluzen/60 bg-bluzen/10">
+          <span class="font-semibold text-bluzen">Bluzen</span>
+        </div>
+        <p class="text-white/60">
+          Make mental health practical, teachable, and empowering.
+        </p>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Links</div>
+        <ul class="space-y-1 text-white/80">
+          <li><a href="program.html" class="hover:text-white">8-Week Focus Program</a></li>
+          <li><a href="library.html" class="hover:text-white">Bluzen Library</a></li>
+          <li><a href="about.html" class="hover:text-white">About Bluzen</a></li>
+          <li><a href="privacy.html" class="hover:text-white">Privacy</a></li>
+          <li><a href="terms.html" class="hover:text-white">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Contact</div>
+        <p class="text-white/70 mb-3">
+          Email: <a href="mailto:info@bluzenfocus.com" class="text-bluzen hover:underline">info@bluzenfocus.com</a>
+        </p>
+        <p class="text-xs text-white/50">
+          Email signup and updates will be added soon.
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-4 text-center text-xs text-white/50">
+      © <span id="year"></span> Bluzen. Built in Ireland.
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
