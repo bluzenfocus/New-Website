@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The 8-Week Focus Program — Bluzen</title>
+  <meta name="description" content="The Bluzen 8-Week Focus Program: structured 1:1 work using hypnotherapy, CBT, and neuroscience-based tools to retrain focus, sleep, and emotional control." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind = {
+      config: {
+        theme: { extend: { colors: { bluzen: '#64DED4' } } }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05070a;
+      color: #e6f0f2;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    .glass {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-black/70 backdrop-blur border-b border-white/10">
+    <div class="container flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="assets/logo.svg" alt="Bluzen logo" class="h-8 w-8 rounded-xl border border-bluzen/60 bg-bluzen/10">
+        <span class="font-semibold tracking-wide text-bluzen group-hover:opacity-80">Bluzen</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
+        <a href="program.html" class="text-white">Program</a>
+        <a href="library.html" class="hover:text-white">Library</a>
+        <a href="about.html" class="hover:text-white">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-12 md:py-16">
+    <section>
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">The 8-Week Focus Program</h1>
+      <p class="text-white/80 mb-6">
+        Rebuild your focus, sleep deeper, and gain the kind of calm control that changes how you think, work, and live.
+      </p>
+
+      <div class="flex flex-wrap gap-3 mb-10">
+        <a href="#book" class="px-5 py-3 rounded-xl bg-bluzen text-black font-semibold hover:opacity-90">
+          Book a 15-Minute Call
+        </a>
+        <a href="#buy" class="px-5 py-3 rounded-xl border border-white/20 text-white/90 hover:bg-white/10">
+          Buy Now (coming soon)
+        </a>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h2 class="text-xl font-semibold mb-3">What you get</h2>
+        <ul class="list-disc list-inside text-white/85 space-y-2 text-sm md:text-base">
+          <li>8 weekly 1:1 sessions on Zoom, focused on resetting how you think, focus, and respond to stress.</li>
+          <li>Personalised hypnosis/NLP recordings tailored to your goals and challenges.</li>
+          <li>Structured tools to track focus, habits, and progress.</li>
+          <li>Lifetime access to the Bluzen digital library (client-only, launching 2026).</li>
+          <li>Between-session check-ins and guided reflection.</li>
+          <li>Lifetime access to all recordings and materials.</li>
+        </ul>
+        <p class="mt-4 text-white/75 text-sm">
+          Everything is designed to get your mind running how it should — calm, clear, and consistent.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <h2 class="text-xl font-semibold mb-3">How it works</h2>
+        <ol class="list-decimal list-inside text-white/85 space-y-3 text-sm md:text-base">
+          <li><strong>Call</strong> – Start with a short call to map your goals and focus areas.</li>
+          <li><strong>Sessions</strong> – Weekly structured sessions that retrain how you respond, focus, and think.</li>
+          <li><strong>Integration</strong> – Tools and recordings to lock in what you’ve built — so the change lasts.</li>
+        </ol>
+        <p class="mt-4 text-white/75 text-sm">
+          Simple process. Measurable change. Long-term results.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-3">Pricing options</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm md:text-base">
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">8-Week Focus Program</div>
+          <div class="text-bluzen font-bold mb-2">£395</div>
+          <p class="text-white/70">The core 8-week block to reset focus, sleep, and emotional control.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">+4-Week Extension</div>
+          <div class="text-bluzen font-bold mb-2">£195</div>
+          <p class="text-white/70">Extend your block by 4 weeks at half price to deepen and stabilise your gains.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">12-Week Deep Rewire</div>
+          <div class="text-bluzen font-bold mb-2">£495</div>
+          <p class="text-white/70">Best value for a full 12-week arc. Includes all materials and Library access.</p>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-white/60">
+        All plans include personalised materials, recordings, and lifetime access to the Bluzen Library (launching 2026).
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-4">FAQ</h2>
+      <div class="space-y-5 text-sm md:text-base">
+        <div>
+          <h3 class="font-semibold mb-1">Who is this for?</h3>
+          <p class="text-white/80">
+            Bluzen is for people who feel distracted, overwhelmed, or stuck — and want a structured, practical way to change it.
+            You don’t need a diagnosis. You don’t need to know what’s “wrong.”
+            This is for anyone who wants better focus, better sleep, and more consistent control over how they think and feel.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Is this therapy?</h3>
+          <p class="text-white/80">
+            No — Bluzen is not therapy in the traditional sense. It’s a structured mental-health training system based on neuroscience,
+            hypnotherapy, and cognitive tools. Therapy is designed to treat deeper or crisis-level issues. Bluzen is designed to help you
+            run your mind better, build skills, and move forward. If we ever identify something outside the scope of this program,
+            we’ll discuss options and signpost to appropriate services.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Do I need to be diagnosed or on medication?</h3>
+          <p class="text-white/80">
+            Not at all. Bluzen works for people with ADHD traits, people who feel overstimulated or unfocused, and people who simply want
+            better habits, focus, or emotional control. Diagnosis and medication are not required. If you are diagnosed or on medication,
+            Bluzen can usually sit alongside this as long as you’re stable and supported — it does not replace medical treatment.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">What if I miss a session?</h3>
+          <p class="text-white/80">
+            If you give notice, we’ll reschedule where possible. If rescheduling isn’t possible that week, you’ll receive a short plan and tools
+            to stay on track until the next session. No momentum is lost.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Is my data private?</h3>
+          <p class="text-white/80">
+            Yes. All forms, notes, and recordings are stored securely and used only to support your work in Bluzen.
+            Nothing is shared with third parties for marketing. You can request deletion of your data at any time,
+            aside from basic records we may need to keep for admin and safety.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Can I pause or refund the program?</h3>
+          <p class="text-white/80">
+            You can pause your block at any time if something changes in your life.
+            Refunds aren’t available once sessions begin, because your slot is reserved and personalised work starts immediately.
+            If early on we both agree the program isn’t suitable, we’ll discuss options.
+          </p>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-white/60">
+        Pause & refund policy: You can pause your program at any time. Refunds aren’t available once sessions begin,
+        as your slot and personalised work start immediately.
+      </p>
+    </section>
+
+    <section class="mb-16" id="book">
+      <h2 class="text-xl font-semibold mb-3">Get started</h2>
+      <p class="text-white/80 mb-4">
+        Book a short call to see if the program is a good fit, or secure your place and start planning your block.
+      </p>
+      <div class="flex flex-wrap gap-3 mb-4">
+        <a href="#" class="px-5 py-3 rounded-xl bg-bluzen text-black font-semibold hover:opacity-90">
+          Book a 15-Minute Call (link coming soon)
+        </a>
+        <a href="#buy" class="px-5 py-3 rounded-xl border border-white/20 text-white/90 hover:bg-white/10">
+          Buy Now (Stripe link coming soon)
+        </a>
+      </div>
+      <div id="buy" class="text-xs text-white/50">
+        Stripe / PayPal checkout will be added here later.
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="container py-6 text-xs text-white/60 flex flex-col md:flex-row justify-between gap-2">
+      <span>© <span id="year"></span> Bluzen.</span>
+      <span><a href="privacy.html" class="hover:text-white">Privacy</a> · <a href="terms.html" class="hover:text-white">Terms</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
