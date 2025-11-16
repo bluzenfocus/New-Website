@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Bluzen Library — Bluzen</title>
+  <meta name="description" content="The Bluzen Library is client-only access launching 2026. Lifetime access for every Bluzen client, bringing together tools, recordings, and systems for long-term mental control." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind = { config: { theme: { extend: { colors: { bluzen: '#64DED4' } } } } };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05070a;
+      color: #e6f0f2;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    .glass {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <header class="sticky top-0 z-40 bg-black/70 backdrop-blur border-b border-white/10">
+    <div class="container flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="assets/logo.svg" alt="Bluzen logo" class="h-8 w-8 rounded-xl border border-bluzen/60 bg-bluzen/10">
+        <span class="font-semibold tracking-wide text-bluzen group-hover:opacity-80">Bluzen</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
+        <a href="program.html" class="hover:text-white">Program</a>
+        <a href="library.html" class="text-white">Library</a>
+        <a href="about.html" class="hover:text-white">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-12 md:py-16">
+    <section class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">The Bluzen Library</h1>
+      <p class="text-bluzen font-semibold mb-2">Client-only access launching 2026</p>
+      <p class="text-white/80">
+        Lifetime access for every Bluzen client. A private space where all the tools, recordings, and systems come together —
+        built to keep your mind clear, structured, and under control long after your sessions end.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-3">Modules</h2>
+      <p class="text-white/75 mb-5">
+        Explore the frameworks that make focus sustainable. Full access is included with every program.
+      </p>
+      <div class="grid md:grid-cols-2 gap-4 text-sm md:text-base">
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Sleep</div>
+          <p class="text-white/70">Restore deep recovery and mental reset.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Regulation</div>
+          <p class="text-white/70">Build calm on demand, not by chance.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Focus</div>
+          <p class="text-white/70">Strengthen attention and follow-through.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Energy</div>
+          <p class="text-white/70">Balance output, recovery, and flow.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Emotion</div>
+          <p class="text-white/70">Understand and direct emotional patterns.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Habits</div>
+          <p class="text-white/70">Turn structure into consistency.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Environments</div>
+          <p class="text-white/70">Optimise your space for clarity and focus.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Blueprints</div>
+          <p class="text-white/70">Step-by-step systems for specific goals.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Workshops</div>
+          <p class="text-white/70">Guided practices for focus and performance.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Hypnosis</div>
+          <p class="text-white/70">Deep recordings to rewire and reinforce calm.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <div class="font-semibold mb-1">Assessments</div>
+          <p class="text-white/70">Track progress, awareness, and growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-3">How to access</h2>
+      <p class="text-white/80 mb-4">
+        Bluzen clients get lifetime access. Start your program to unlock it.
+      </p>
+      <a href="program.html" class="px-5 py-3 rounded-xl bg-bluzen text-black font-semibold hover:opacity-90 text-sm md:text-base">
+        Join via Program
+      </a>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="container py-6 text-xs text-white/60 flex flex-col md:flex-row justify-between gap-2">
+      <span>© <span id="year"></span> Bluzen.</span>
+      <span><a href="privacy.html" class="hover:text-white">Privacy</a> · <a href="terms.html" class="hover:text-white">Terms</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
